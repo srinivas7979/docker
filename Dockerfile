@@ -13,7 +13,6 @@ RUN npm install
 # RUN npm install --only=production
 
 # Bundle app source
-#COPY . .
-COPY $WORKSPACE/docker/node-website-master/* .
+COPY . .
 EXPOSE 3000
 CMD [ "npm", "start" ]
